@@ -1,17 +1,42 @@
 body{
+font-family: 'GmarketSansMedium';
+margin: 0;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-margin: 0 auto;
+.header_Title{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 73px;
+    margin: 0;
 
 }
+.header_SubTitle{
+    margin: 0 0 32px;
+    line-height: 19px;
+}
+
 .GNB{
     background-color: #0a0a0a;
     margin: 0 auto;
-    height: 60px;
+    width: 100%;
+    height: 80px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    opacity: 0.9;
+
 
 }
+
 .GNB ul{
     margin: 0 auto;
     padding: 0 30px;
@@ -23,8 +48,8 @@ margin: 0 auto;
     width: 300px;
 
     border-radius: 100px;
-
 }
+
 .GNB li{
     list-style-type: none;
     width: auto;
@@ -35,6 +60,7 @@ margin: 0 auto;
 }
 
 .GNB li a{
+    font-family: 'GmarketSansMedium';
     text-decoration-line: none;
     font-size: 16px;
     font-weight: 400;
@@ -45,62 +71,80 @@ margin: 0 auto;
     outline-style: solid;
     outline-color: #fff;
     outline-width: 2px;
+
 }
 
-.GNB li a:hover{
+.GNB li a:checked{
     background-color: #fff;
-    color: #4AA27C;
+    color:hsl(0, 0%, 0%);
     font-weight: 600;
 }
 
 .GNB li a.active{
     background-color: #fff;
-    color: #4AA27C;
+    color:rgb(0, 0, 0);
     font-weight: 600;
 }
 
+.header{
+    width: 0 auto;
+}
 .header_slide{
     width: auto;
-    height: 7000px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-}
-.header_01{ 
-    width: auto;
-    height: 200px;
-    padding: 20px;
-    background-color: #0a0a0a;
-
+    height: 904px;
     display: flex;
     flex-direction: column;
     
-    align-items: center;
-    justify-content: center;
+    background-color:#0a0a0a;
+}
+.header_01{ 
+    width: 1024px;
+    height: 124px;
+    margin: 0 auto;
+    padding: 0px;
+    margin-top: 140px;
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;  
+
+    color: #fff;    
 }
 
 .header_01_TEXT{
-    margin: 0 auto;
-    display: flex;
-    text-align: center;
-    font-size: 24px;
-    font-style: ;
-    font-weight: 400;
+    /*폰트*/
+    font-family: 'GmarketSansMedium';
+    font-size: 40px;
+    font-weight:900; 
+    text-align: left;
     color: white;
+   
+    /*범위*/
+    width: 70%;
+    height: 600px;
+    padding: 0 6px;
 
-
-    
+    background-color: #d38740;
+}
+.header_01_TEXT pre{
+    margin: 0;
+}
+.header_01_TEXT{
+    margin: 0;
 }
 
-
-.body2{
-    width: auto;
-    height: 200px;
-    margin: 0 auto;
-
-
+.favourite_bnt{
+    position: absolute;
+    bottom: 0;
+    margin: 60px;
+    position: fixed;
 }
+
+.favourite_bnt img{
+    width: 80px;
+    height: 80px;
+}
+
 
 
 
