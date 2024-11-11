@@ -9,6 +9,7 @@ margin: 0;
     font-style: normal;
 }
 
+
 .header_Title{
     font-size: 60px;
     font-weight: 900;
@@ -85,7 +86,6 @@ margin: 0;
     color:rgb(0, 0, 0);
     font-weight: 600;
 }
-
 .header{
     width: 0 auto;
 }
@@ -133,16 +133,48 @@ margin: 0;
     margin: 0;
 }
 
-.favourite_bnt{
+.favourite_btn{
     position: absolute;
     bottom: 0;
     margin: 60px;
     position: fixed;
 }
 
-.favourite_bnt img{
+.favourite_btn img{
     width: 80px;
     height: 80px;
+}
+
+body{
+    background-color: #0a0a0a;
+    color: #fff;
+}
+.album{
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    height: 750px;
+}
+.album p{
+    text-align: center;
+    font-size: 40px
+}
+.album ul{
+    display: flex; 
+    padding: 0 0px;/* 추가: 기본 padding 제거 */
+    margin: 0 ; /* 추가: 기본 margin 제거 */
+    width: 100%; /* ul의 너비를 부모에 맞추기 */
+gap: 20px;
+    justify-content: center;
+}
+.album_list{
+    list-style: none;
+    width: 17%;
+    height: 300px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
 }
 
 
