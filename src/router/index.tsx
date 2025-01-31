@@ -3,7 +3,6 @@ import { Home } from "../components/Home"; // Home 컴포넌트 임포트
 import { App } from "./App"; // App 컴포넌트 임포트
 import React from "react";
 // src/index.tsx
-import "./styles/input.css";
 
 const router = createBrowserRouter([
   {
