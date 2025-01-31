@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 최신 ES 버전으로 트랜스파일
+    "module": "esnext", // ES 모듈 사용
+    "moduleResolution": "node", // 노드 모듈 해석 방식
+    "jsx": "react-jsx", // React JSX 문법
+    "strict": true, // 엄격한 타입 체크
+    "esModuleInterop": true // ES 모듈과 CommonJS 호환
+  },
+  "include": ["**/*"], // 프로젝트의 모든 TypeScript 파일 포함
+  "exclude": ["node_modules"] // node_modules는 제외
+}
