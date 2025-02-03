@@ -20,9 +20,12 @@ export function Home() {
           loop
           playsInline
         >
-          <source src="./main-bg-simple.mp4" type="video/mp4" />
+          <source src="./main-bg-color.mp4" type="video/mp4" />
         </video>
       </div>
+
+      {/* 영상 위에 반투명한 하얀색 오버레이 */}
+      <div className="absolute top-0 left-0 w-full h-full bg-white opacity-70 z-1"></div>
 
       <div className="flex absolute flex-wrap justify-center gap-6 w-full h-[80vh] overflow-hidden px-[10vw] z-10">
         {projects.map((project) => (
