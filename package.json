@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
+  "homepage": "https://hyebinkimsdf.github.io/hyebinkim.github.io/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "deploy": "gh-pages -d dist"
+    "build": "node_modules/.bin/postcss src/styles/tailwind.css -o dist/styles.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
