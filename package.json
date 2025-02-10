@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node_modules/.bin/postcss src/styles/tailwind.css -o dist/styles.css",
+    "build": "vite build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
@@ -19,6 +19,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "live-server": "^1.2.2",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",

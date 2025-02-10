@@ -31,7 +31,7 @@ export function Home() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-black w-[20%] h-[60%] rounded-xl hover:bg-slate-300 my-auto 
+            className="bg-black w-[20%] h-[60%] rounded-xl hover:bg-slate-300 my-auto  opacity-95 hover:opacity-70 shadow-lg
                      flex-1 transition-all duration-300 ease-in-out hover:flex-[2] text-2xl hover:text-5xl hover:font-bold ron"
           >
             <Link to={project.link}>
