@@ -10,11 +10,11 @@ import { Design02 } from "../components/Design02";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <App />, // App 컴포넌트를 렌더링
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
